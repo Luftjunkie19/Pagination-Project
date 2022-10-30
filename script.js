@@ -83,7 +83,7 @@ const itemsInBox = 6;
 let currentIndex = 1;
 
 function nextPage() {
-  if (currentIndex < numberOfPages()) {
+  if (currentIndex < numberOfPages) {
     currentIndex++;
     showItems(currentIndex);
   }

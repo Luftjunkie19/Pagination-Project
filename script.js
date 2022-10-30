@@ -98,16 +98,14 @@ function prevPage() {
   console.log(currentIndex);
 }
 
-function numberOfPages() {
-  return Math.ceil(items.length / itemsInBox);
-}
+const numberOfPages = Math.ceil(items.length / itemsInBox);
 
 function showItems(page) {
   if (page < 1) {
     page = 1;
   }
-  if (page > numberOfPages()) {
-    page = numberOfPages();
+  if (page > numberOfPages) {
+    page = numberOfPages;
   }
 
   itemsContaines.innerHTML = ``;
@@ -131,30 +129,26 @@ function showItems(page) {
   <h2 class="item-title">${title}</h2>`;
     itemsContaines.append(div);
   }
-  pageStand.innerText = `${page}/${numberOfPages()}`;
+  pageStand.innerText = `${page}/${numberOfPages}`;
 
-  if (page == 1) {
+  if (page === 1) {
     prevBtn.style.display = "none";
   } else {
     prevBtn.style.display = "block";
   }
 
-  if (page == numberOfPages()) {
+  if (page === numberOfPages) {
     nextBtn.style.display = "none";
   } else {
     nextBtn.style.display = "block";
   }
 }
 
-window.addEventListener("load", () => {
-  showItems(1);
-});
+showItems(1);
 
-nextBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+nextBtn.addEventListener("click", () => {
   nextPage();
 });
-prevBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+prevBtn.addEventListener("click", () => {
   prevPage();
 });

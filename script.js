@@ -71,6 +71,22 @@ const items = [
     img: "https://images.unsplash.com/photo-1510597026538-da2e86b8588a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=847&q=80",
     title: "Sadu Nikokoko",
   },
+  {
+    img: "https://images.pexels.com/photos/3787832/pexels-photo-3787832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Muhammad Adu",
+  },
+  {
+    img: "https://images.pexels.com/photos/5247133/pexels-photo-5247133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Paul Chakincici",
+  },
+  {
+    img: "https://images.pexels.com/photos/159555/soccer-football-athlete-player-159555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Robert Buster",
+  },
+  {
+    img: "https://images.pexels.com/photos/9367714/pexels-photo-9367714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Tarkan Korkmaz",
+  },
 ];
 const itemsContaines = document.querySelector(".items-container");
 const nextBtn = document.querySelector(".next");

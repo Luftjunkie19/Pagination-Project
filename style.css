@@ -18,6 +18,7 @@ body {
   font-size: 48px;
   line-height: 72px;
   color: white;
+  text-align: center;
 }
 
 .container {
@@ -88,7 +89,7 @@ body {
   display: flex;
 }
 
-@media (min-width: 468px) and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 768px) {
   .items-container {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3px;
